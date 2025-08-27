@@ -42,7 +42,10 @@ graph TD
 
 The authentication UI is built with reusable components from `shadcn/ui`.
 
-*   `AuthForm`: A versatile form component that handles login, signup, forgot password, and reset password states.
+*   `LoginForm`: A form for handling user login.
+*   `SignupForm`: A form for handling user registration.
+*   `ForgotPasswordForm`: A form for handling the forgot password flow.
+*   `ResetPasswordForm`: A form for handling the reset password flow.
 *   `PasswordInput`: A reusable password input with a show/hide toggle.
 *   `PasswordStrength`: A visual indicator for password strength.
 
