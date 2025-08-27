@@ -22,11 +22,12 @@ create policy "Users can update own profile." on profiles
   for update using (auth.uid() = id);
 
 -- Create handle_new_user function
-create function public.handle_new_user()
+-- Create handle_new_user function
+create or replace function public.handle_new_user()
 returns trigger as $
 begin
-  insert into public.profiles (id, first_name, last_name, avatar_url)
-  values (new.id, new.raw_user_meta_data->>'first_name', new.raw_user_meta_data->>'last_name', new.raw_user_meta_data->>'avatar_url');
+  insert into public.profiles (id, username, first_name, last_name, avatar_url)
+  values (new.id, new.raw_user_meta_data->>'username', INITCAP(new.raw_user_meta_data->>'first_name'), INITCAP(new.raw_user_meta_data->>'last_name'), new.raw_user_meta_data->>'avatar_url');
   return new;
 end;
 $ language plpgsql security definer;

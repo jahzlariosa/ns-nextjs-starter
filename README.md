@@ -1,4 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Supabase Starter
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), pre-configured with Supabase for authentication and database management.
+
+## Features
+
+*   **Next.js 15** with Turbopack
+*   **Supabase SSR** for authentication and data
+*   **shadcn/ui** for UI components
+*   **Tailwind CSS** for styling
+*   **TypeScript** for type safety
+*   **ESLint** for linting
+
+## Authentication
+
+This starter kit includes a complete authentication system with the following features:
+
+*   Login / Signup
+*   Forgot / Reset Password
+*   Email Confirmation
+*   Password Strength Indicator
+*   Real-time Username Availability Check
+*   Toast Notifications with `sonner`
+
+For more details, see the [Authentication Documentation](./docs/authentication.md).
 
 ## Getting Started
 

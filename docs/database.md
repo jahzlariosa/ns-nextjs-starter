@@ -41,6 +41,8 @@ erDiagram
 
 This function is a trigger that fires after a new user is inserted into the `auth.users` table. It creates a corresponding profile for the new user in the `public.profiles` table.
 
+This function also ensures that the `first_name` and `last_name` are capitalized using the `INITCAP` function, and it correctly inserts the `username`.
+
 ```mermaid
 graph TD
     A[New user signs up] --> B{auth.users INSERT};
