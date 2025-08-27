@@ -1,5 +1,7 @@
 # Next.js Supabase Starter
 
+[![CI](https://github.com/jahzlariosa/ns-nextjs-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/jahzlariosa/ns-nextjs-starter/actions/workflows/ci.yml)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), pre-configured with Supabase for authentication and database management.
 
 ## Features
