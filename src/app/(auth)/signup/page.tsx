@@ -1,4 +1,4 @@
-import { AuthForm } from '@/components/auth/auth-form';
+import { SignupForm } from '@/components/auth/signup-form';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
 
@@ -10,7 +10,7 @@ export default function SignupPage() {
           <CardTitle>Sign Up</CardTitle>
         </CardHeader>
         <CardContent>
-          <AuthForm type="signup" />
+          <SignupForm />
         </CardContent>
         <CardFooter>
           <p className="text-sm text-center w-full">

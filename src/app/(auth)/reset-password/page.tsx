@@ -1,4 +1,4 @@
-import { AuthForm } from '@/components/auth/auth-form';
+import { ResetPasswordForm } from '@/components/auth/reset-password-form';
 import {
   Card,
   CardContent,
@@ -18,7 +18,7 @@ export default function ResetPasswordPage() {
           <CardDescription>Enter your new password below.</CardDescription>
         </CardHeader>
         <CardContent>
-          <AuthForm type="reset-password" />
+          <ResetPasswordForm />
         </CardContent>
         <CardFooter>
           <p className="text-sm text-center w-full">

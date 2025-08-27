@@ -1,4 +1,4 @@
-import { AuthForm } from '@/components/auth/auth-form';
+import { ForgotPasswordForm } from '@/components/auth/forgot-password-form';
 import {
   Card,
   CardContent,
@@ -20,7 +20,7 @@ export default function ForgotPasswordPage() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <AuthForm type="forgot-password" />
+          <ForgotPasswordForm />
         </CardContent>
         <CardFooter>
           <p className="text-sm text-center w-full">

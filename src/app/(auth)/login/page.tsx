@@ -1,4 +1,4 @@
-import { AuthForm } from '@/components/auth/auth-form';
+import { LoginForm } from '@/components/auth/login-form';
 import {
   Card,
   CardContent,
@@ -24,7 +24,7 @@ export default function LoginPage({
           )}
         </CardHeader>
         <CardContent>
-          <AuthForm type="login" />
+          <LoginForm />
         </CardContent>
         <CardFooter>
           <p className="text-sm text-center w-full">
