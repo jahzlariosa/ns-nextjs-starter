@@ -4,6 +4,14 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), pre-configured with Supabase for authentication and database management.
 
+## Create Next App
+
+You can create a new project using this starter with the following command:
+
+```bash
+npx create-next-app -e https://github.com/jahzlariosa/ns-nextjs-starter
+```
+
 ## Features
 
 *   **Next.js 15** with Turbopack
