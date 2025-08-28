@@ -17,10 +17,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 This project follows a set of standards and practices enforced by the Gemini AI assistant. For more information, please see the [Gemini Standards](GEMINI.md) documentation.
 
-## Gemini Standards
-
-This project follows a set of standards and practices enforced by the Gemini AI assistant. For more information, please see the [Gemini Standards](GEMINI.md) documentation.
-
 ## Authentication
 
 This starter kit includes a complete authentication system with the following features:
