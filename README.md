@@ -2,84 +2,133 @@
 
 [![CI](https://github.com/jahzlariosa/ns-nextjs-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/jahzlariosa/ns-nextjs-starter/actions/workflows/ci.yml)
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), pre-configured with Supabase for authentication and database management.
+A modern, production-ready [Next.js](https://nextjs.org) starter template with Supabase integration, featuring a complete authentication system and developer experience optimizations.
 
-## Create Next App
+## 🚀 Quick Start
 
-You can create a new project using this starter with the following command:
+Create a new project using this template:
 
 ```bash
-npx create-next-app -e https://github.com/jahzlariosa/ns-nextjs-starter
+npx create-next-app my-app -e https://github.com/jahzlariosa/ns-nextjs-starter
+cd my-app
 ```
 
-## Features
+## ✨ Features
 
-*   **Next.js 15** with Turbopack
-*   **Supabase SSR** for authentication and data
-*   **shadcn/ui** for UI components
-*   **Tailwind CSS** for styling
-*   **TypeScript** for type safety
-*   **ESLint** for linting
+- **Next.js 15** with Turbopack for blazing-fast development
+- **Supabase SSR** for seamless authentication and database management
+- **shadcn/ui** for beautiful, accessible UI components
+- **Tailwind CSS** for utility-first styling
+- **TypeScript** for enhanced developer experience and type safety
+- **ESLint & Prettier** for consistent code quality
 
-## Gemini Standards
+### 🔐 Authentication System
 
-This project follows a set of standards and practices enforced by the Gemini AI assistant. For more information, please see the [Gemini Standards](GEMINI.md) documentation.
+Complete authentication solution out-of-the-box:
 
-## Authentication
+- **User Registration & Login** with email/password
+- **Password Reset** flow with email verification
+- **Email Confirmation** for new accounts
+- **Password Strength Indicator** for better UX
+- **Real-time Username Availability Check**
+- **Toast Notifications** using Sonner for user feedback
 
-This starter kit includes a complete authentication system with the following features:
+## 📖 Documentation
 
-*   Login / Signup
-*   Forgot / Reset Password
-*   Email Confirmation
-*   Password Strength Indicator
-*   Real-time Username Availability Check
-*   Toast Notifications with `sonner`
+- [Authentication Guide](./docs/authentication.md) - Detailed authentication implementation
+- [Gemini Standards](GEMINI.md) - Development standards and practices
 
-For more details, see the [Authentication Documentation](./docs/authentication.md).
+## 🛠 Setup Instructions
 
-## Getting Started
-
-### 1. Clone the repository
+### 1. Environment Setup
 
 ```bash
+# Clone the repository
 git clone https://github.com/jahzlariosa/ns-nextjs-starter.git
 cd ns-nextjs-starter
-```
 
-### 2. Install dependencies
-
-```bash
+# Install dependencies
 npm install
 ```
 
-### 3. Set up your Supabase project
+### 2. Supabase Configuration
 
-1.  Go to [supabase.com](https://supabase.com) and create a new project.
-2.  Navigate to the **SQL Editor** in your Supabase project dashboard.
-3.  Copy the contents of `database/initial-schema.sql` and run it to set up the necessary tables and functions.
+1. **Create Project**: Visit [supabase.com](https://supabase.com) and create a new project
+2. **Database Setup**: 
+   - Navigate to **SQL Editor** in your project dashboard
+   - Copy and execute the contents of `database/initial-schema.sql`
+3. **Get Credentials**: 
+   - Go to **Settings** → **API** in your Supabase dashboard
+   - Copy your **Project URL** and **anon/public key**
 
-### 4. Configure environment variables
-
-1.  Rename the `.env.example` file to `.env.local`.
-2.  Find your project's **API URL** and **anon key** in your Supabase project's **API Settings**.
-3.  Update the `.env.local` file with your Supabase credentials:
-
-    ```bash
-    NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
-    NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=YOUR_SUPABASE_ANON_KEY
-    ```
-
-### 5. Run the development server
+### 3. Environment Variables
 
 ```bash
+# Rename the example file
+cp .env.example .env.local
+```
+
+Update `.env.local` with your Supabase credentials:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_anon_key
+```
+
+### 4. Development
+
+```bash
+# Start the development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to see your application.
 
-## Deploy on Vercel
+## 📦 Available Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
+npm run lint         # Run ESLint
+npm run type-check   # Run TypeScript compiler check
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. **Deploy**: Push your code to GitHub and connect it to [Vercel](https://vercel.com)
+2. **Environment Variables**: Add your environment variables in the Vercel dashboard
+3. **Domain**: Configure your custom domain (optional)
+
+For detailed deployment instructions, check the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+
+### Other Platforms
+
+This template works with any platform that supports Node.js applications:
+- Netlify
+- Railway
+- Render
+- DigitalOcean App Platform
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. Make sure to:
+
+1. Follow the existing code style
+2. Add tests for new features
+3. Update documentation as needed
+4. Follow the [Gemini Standards](GEMINI.md)
+
+## 🆘 Support
+
+If you encounter any issues or have questions:
+
+1. Check the [documentation](./docs/)
+2. Search [existing issues](https://github.com/jahzlariosa/ns-nextjs-starter/issues)
+3. Create a [new issue](https://github.com/jahzlariosa/ns-nextjs-starter/issues/new) if needed
+
+---
+
+Built with ❤️ using Next.js and Supabase
